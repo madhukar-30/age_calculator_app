@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Calculator</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        // Your function definition here
+
+        // Your provided findAge function
+        function findAge(current_date, current_month, current_year, birth_date, birth_month, birth_year) {
+            // days of every month
+            month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+            // Check for leap year (February has 29 days)
+            if (current_year % 4 === 0 && (current_year % 100 !== 0 || current_year % 400 === 0)) {
+                month[1] = 29;
+            }
+
+            if (birth_date > current_date) {
+                current_month = current_month - 1;
+                if (current_month === 0) {
+                    current_month = 12; // Set current_month to December
+                    current_year = current_year - 1; // Decrement current_year for the previous year
+                }
+                current_date = current_date + month[current_month - 1];
+            }
+
+            if (birth_month > current_month) {
+                current_year = current_year - 1;
+                current_month = current_month + 12;
+            }
+
+            var calculated_date = current_date - birth_date;
+            var calculated_month = current_month - birth_month;
+            var calculated_year = current_year - birth_year;
+
+            // Set the output in the specified HTML element
+            var outputElement = document.getElementById('output');
+            outputElement.innerHTML = "Present Age<br>Years: " + (calculated_year) + " Months: " + calculated_month + " Days: " + calculated_date;
+        }
+
+        // Define current date and birthdate variables
+        var current_date = 1;
+        var current_month = 1;
+        var current_year = 2023;
+        var birth_date = 2;
+        var birth_month = 1;
+        var birth_year = 2009;
+
+        // Call the function
+        findAge(current_date, current_month, current_year, birth_date, birth_month, birth_year);
+    </script>
+</body>
+</html>

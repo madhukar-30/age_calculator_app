@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <form action="">
+                <div class="input-container">
+                <label for="day">DAY</label><br>
+        <input type="number"   placeholder="DD" id="day-input" onblur="checkday()" onkeypress="limitLength(event,this.value,2)" >
+                <span class="day-error"></span>
+            </div>
+               <div class="input-container">
+                <label for="month">MONTH</label><br>
+                <input type="number"  placeholder="MM"  id="month-input" onblur="checkmonth()" onkeypress="limitLength(event,this.value,2)">
+                <span class="month-error"></span>
+
+            </div>
+            <div class="input-container">
+                <label for="year">YEAR</label><br>
+                <input type="number"  placeholder="YYYY" id="year-input" onblur="checkyear()" onkeypress="limitLength(event,this.value,4)" >
+                <span class="year-error"></span>
+
+            </div>
+           
+            </form>
+            <div class="line"></div>
+       
+        
+         
+
+            <div class="output">
+                <div class="btn-container">
+                <button class="btn" ></button>
+            </div>
+                <div class="result">
+                <div class="year"><span class="year-output">- - </span> years</div>
+                <div class="month"><span class="month-output">- - </span> months</div>
+                <div class="days"><span class="days-output">- - </span> days</div>
+            </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
