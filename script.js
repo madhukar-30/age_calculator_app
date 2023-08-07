@@ -48,7 +48,7 @@ const validationdata = {
   year: {
     condition: year => {
       const now = new Date().getFullYear();
-      return year < now;
+      return year && year < now;
     },
     errorMessage: "Must be in the past",
   },
