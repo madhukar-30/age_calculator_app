@@ -87,7 +87,7 @@ form .input-container span{
 .btn-container{
     height: 40px;
 }
-.btn{
+#btn{
    background-color: var(--Purple);
    padding: 2.3rem;
    border-radius: 50%;
@@ -103,7 +103,7 @@ form .input-container span{
   cursor: pointer;
 transform: translate(-50%,-50%);
 }
-.btn:hover{
+#btn:hover{
     background-color: var(--Off-black);
 }
 
@@ -137,7 +137,7 @@ transform: translate(-50%,-50%);
        margin-bottom: 4rem;
   
     }
-   .btn{
+   #btn{
     margin-left:40%;
    }
 
