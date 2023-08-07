@@ -10,20 +10,20 @@
 <body>
  <div class="main">
         <div class="main-container">
-            <form action="">
+            <form >
                 <div class="input-container">
-                <label for="day">DAY</label><br>
+                <label for="day-input">DAY</label><br>
         <input type="number"   placeholder="DD" id="day-input" onblur=" inputValidation(dayInput,dayError,'day')" onkeypress="limitLength(event,this.value,2)" >
                 <span class="day-error"></span>
             </div>
                <div class="input-container">
-                <label for="month">MONTH</label><br>
+                <label for="month-input">MONTH</label><br>
                 <input type="number"  placeholder="MM"  id="month-input" onblur="inputValidation(monthInput,monthError,'month')" onkeypress="limitLength(event,this.value,2)">
                 <span class="month-error"></span>
 
             </div>
             <div class="input-container">
-                <label for="year">YEAR</label><br>
+                <label for="year-input">YEAR</label><br>
                 <input type="number"  placeholder="YYYY" id="year-input" onblur="inputValidation(yearInput,yearError,'year')" onkeypress="limitLength(event,this.value,4)" >
                 <span class="year-error"></span>
 
