@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Age calculator solution](https://your-solution-url.com)
-- Live Site URL: [Age calculator ](https://your-live-site-url.com)
+- Solution URL: [Age calculator solution](https://github.com/madhukar-30/age_calculator_app.git)
+- Live Site URL: [Age calculator ](https://madhukar-30.github.io/age_calculator_app/)
 
 ## My process
 
