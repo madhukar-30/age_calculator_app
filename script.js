@@ -13,7 +13,7 @@ const yearError = document.querySelector(".year-error");
 
 // Get reference to the form and the calculate button
 const form = document.querySelector("form");
-const btn = document.querySelector(".btn");
+const btn = document.getElementById("btn");
 
 // Array of invalid characters to prevent users from entering them in the input fields
 const invalidChars = ["-", "+", "e"];
